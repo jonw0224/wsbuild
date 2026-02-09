@@ -1,0 +1,75 @@
+BODY {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 12pt
+}
+}
+P {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 12pt
+}
+H1 {
+	FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+	COLOR: #1f1f1f;
+	FONT-SIZE: 24pt
+}
+H2 {
+	FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+	COLOR: #1f1f1f;
+	FONT-SIZE: 22pt
+}
+H3 {
+	FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+	COLOR: #1f1f1f;
+	FONT-SIZE: 20pt
+}
+H4 {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 18pt
+}
+H5 {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 16pt
+}
+H6 {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 14pt
+}
+
+.commentName {
+	COLOR: #1f1f1f;
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
+	FONT-SIZE: 12pt;
+}
+.commentDate {
+	COLOR: #1f1f1f; 
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
+	FONT-SIZE: 12pt;
+}
+.commentText {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 12pt;
+	POSITION: relative; LEFT: 3px;
+}
+
+SMALL {
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; FONT-SIZE: 10pt
+}
+
+A {
+	TEXT-DECORATION: none
+}
+
+A:visited {
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	TEXT-DECORATION: underline
+}
+
+.updates {
+	POSITION: relative; LEFT: 3px;
+	FONT-SIZE: 12pt;
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif
+}
+
+.updatesDate {
+	COLOR: #1f1f1f; 
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif
+}

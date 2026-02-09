@@ -1,0 +1,26 @@
+[lastupdated]
+2012 Aug 29
+
+[pubDate]
+<!--#blogpost3.mk:date#-->
+
+[SideLinks]
+<!--#blogpost3.mk:link#--><!--#main.dat:tc#-->
+<!--#blogpost3.mk:title#--><!--#main.dat:tb#-->
+<!--#blogpost2.mk:link#--><!--#main.dat:tc#-->
+<!--#blogpost2.mk:title#--><!--#main.dat:tb#-->
+<!--#blogpost1.mk:link#--><!--#main.dat:tc#-->
+<!--#blogpost1.mk:title#-->
+
+[Blog]
+<!--#blogpost3.mk:Entry#-->
+<!--#blogpost2.mk:Entry#-->
+
+[Entire]
+<!--#this:Blog#-->
+<!--#blogpost1.mk:Entry#-->
+
+
+[pLink]
+<a href="<!--#blogpost1.mk:link#-->">Prev >></a>
+

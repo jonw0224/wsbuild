@@ -1,0 +1,54 @@
+[directory]
+www/
+
+[title]
+Example Website
+
+[keywords]
+Website keywords
+
+[description]
+Website description
+
+[copyright]
+Copyright 2012 by <!--#this:author#-->
+
+[author]
+Jonathan Weaver
+
+[email]
+jonw0224@aim.com
+
+[stylesheet]
+<link rel="stylesheet" href="main.css">
+
+[javascript]
+
+
+[sidebarstart]
+<table border=0 cellpadding=5 cellspacing=0>
+<tr>
+<td><div class="h5"><a href="
+
+[sidebarstop]
+</a></div></td>
+</tr>
+</table>
+
+[tb]
+</a></div></td>
+</tr><tr>
+<td><div class="h5"><a href="
+
+[tc]
+"><font color=#101010>
+
+[rssfeed]
+<div align="right">
+	<a href="blog.xml"><reg>Subscribe</reg></a>
+</div>
+
+[url]
+http://www.examplewebsite.com
+
+

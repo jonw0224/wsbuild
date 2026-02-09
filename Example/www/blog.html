@@ -1,0 +1,239 @@
+<HTML>
+<HEAD>
+    <TITLE>Example Website - Blog</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Website keywords" name=keywords>
+    <META content="Website description" name=description>
+    <META content="Jonathan Weaver" name=author>
+    <META keywords="Website keywords">
+    <link rel="stylesheet" href="main.css">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<script src="commentscript.js" language="JavaScript1.2"></script>
+
+</HEAD>
+<BODY text="#000000" vLink="#551a8b" link="#0000ee" bgColor="#ffffff">
+
+<a name="top"></a>
+<center>
+<table width=800 border=0 cellspacing=0 cellpadding=0>
+    <tr>
+        <td>
+			<h1>Example Website - Blog</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table width=800 cellspacing=0 border=0 cellpadding=2>
+                <tr>
+                    <td width=100 align="center" style="BORDER-RIGHT: white 2px solid;" bgcolor="#101010"><div class="h4"><a href="index.html"><font color="white">Home</a></td>
+                    <td width=100 align="center" style="BORDER-RIGHT: white 2px solid;" bgcolor="#101010"><div class="h4"><a href="blog.html"><font color="white">Blog</a></td>
+                    <td width=100 align="center" style="BORDER-RIGHT: white 2px solid;" bgcolor="#101010"><div class="h4"><a href="about.html"><font color="white">About</a></td>
+                    <td align="center" bgcolor="#101010" width="*"><div class="h4">&nbsp;</td>
+                </tr>
+            </table>
+			<br>
+		</td>
+    </tr>
+    <tr>
+		<td>
+            <table width="800" border=0 cellpading=0 cellspacing=0>
+			<tr>
+            <td width="590" valign="top">
+
+			<div align="right">
+	<a href="blog.xml"><reg>Subscribe</reg></a>
+</div>
+
+<a name="BlogPost3"></a>
+<script src="commentdata3.js?v=1" language="JavaScript1.2"></script>
+<h3><!--blogpost3.html?c=3-->Program History</b>&nbsp;&nbsp;<span class="commentDate"><b>Mon, 20 Aug 2012 15:19:00 EST
+<!--
+This program is called "build".  I use it to create static webpages using
+shared data referred to across several files.  The original program was
+developed in 2000 when I was in college and administered a couple of 
+websites.  The problem was my clients (family) requested changes that spanned 
+multiple webpages and the static HTML was difficult to maintain.  That is
+why many people use PHP.  However, the servers did not support PHP since
+they were free webhosts.  So, I wrote a parser in PowerBasic.  Since then, I 
+lost the source code but liked using the parser and continued to use it.  
+Now I can no longer use it because it was compiled in 16 bit code for a 386
+and Windows 7 no longer supports it.  So this is a rewrite in C with some
+improvements from the original parser (examples are lifted filename 
+limitations, input and output file size limitations removed, and the addition
+of a default value in the make file).
+http://www.examplewebsite.com/blogpost3.html?c=3
+http://www.examplewebsite.com/blogpost3.html?c=3
+--></b></span></h3>
+<p>This program is called "build".  I use it to create static webpages using
+shared data referred to across several files.  The original program was
+developed in 2000 when I was in college and administered a couple of 
+websites.  The problem was my clients (family) requested changes that spanned 
+multiple webpages and the static HTML was difficult to maintain.  That is
+why many people use PHP.  However, the servers did not support PHP since
+they were free webhosts.  So, I wrote a parser in PowerBasic.  Since then, I 
+lost the source code but liked using the parser and continued to use it.  
+Now I can no longer use it because it was compiled in 16 bit code for a 386
+and Windows 7 no longer supports it.  So this is a rewrite in C with some
+improvements from the original parser (examples are lifted filename 
+limitations, input and output file size limitations removed, and the addition
+of a default value in the make file).</p>
+</p>
+<table width=100%>
+<tr>
+<td width=75% align="left">
+<p id="button3" onclick="showHideComments('button3', 'content3', 3)">
+	<script type="text/javascript">document.write(countComments(3)); dispContents[3] = 0;</script>
+</p>
+</tr>
+</table>
+<br>
+<span id="content3">
+</span><br><br>
+
+<a name="BlogPost2"></a>
+<script src="commentdata2.js?v=1" language="JavaScript1.2"></script>
+<h3><!--blogpost2.html?c=2-->Description</b>&nbsp;&nbsp;<span class="commentDate"><b>Mon, 20 Aug 2012 15:19:00 EST
+<!--
+A make file (*.mk) defines an HTML page to be generated.  It is a standard
+ASCII text file that defines the HTML file to be generated it in the
+section of the file called Make.  Make contains four values: 
+
+file=output filename
+directory=output directory
+template=input template
+default=file defining sections not included in the make file.
+
+The template file will contain HTML code for the file to be generated and it
+includes special comment tags like #ATag#.  The additional pound
+sign indicates the Make file should be referenced for the information.  In
+the case above the tag will be replaced with everything in the ATag
+section of the make file.  Additionally, the section ATag in the make file
+may have additional tags like #BTag# that are also processed in the
+during the parse.
+
+Now, tags can be formatted in three cases:
+
+#ATag# is a general format.  It causes the parser to check for the 
+section ATag in the make file first, then in the file the tag appear in, 
+then in the file noted as the default.  Default is used to cause the current
+make file to inherit some sections from the default.
+
+#filename:ATag# is a more specific format.  It causes the parser
+to look in the filename denoted before the colon.
+
+#this:ATag# tells the parser to only look in the file the tag appears 
+in for the section ATag.
+
+Build will process all make files to generate all HTML pages.  The power in
+the program is that shared information or HTML code can be placed in
+common files.  I also use it to format the same information in different 
+files (such as generating an XML RSS Feed from a list of HTML files by
+having a make file that generates the RSS Feed).  For instance, if the data
+needs to be reformatted and #ATag# is used within the data, and
+the data is referred to by two different make files that define section 
+ATag differently, the correct section will replace ATag in the data.  It 
+doesn't sound that powerful, but my experience is it makes for some pretty
+cool possibilities.  I still use it for my website, http://jonathanweaver.net
+http://www.examplewebsite.com/blogpost2.html?c=2
+http://www.examplewebsite.com/blogpost2.html?c=2
+--></b></span></h3>
+<p>A make file (*.mk) defines an HTML page to be generated.  It is a standard
+ASCII text file that defines the HTML file to be generated it in the
+section of the file called <code>&#91;Make&#93;</code>.  <code>&#91;Make&#93;</code> contains four values:</p>
+
+<code>file=&lt;output filename&gt;</br>
+directory=&lt;output directory&gt;</br>
+template=&lt;input template&gt;</br>
+default=&lt;file defining sections not included in the make file&gt</br></code>
+
+<p>The template file will contain HTML code for the file to be generated and it
+includes special comment tags like <code>&lt;!--#ATag#--&gt;</code>.  The additional pound
+sign indicates the Make file should be referenced for the information.  In
+the case above the tag will be replaced with everything in the <code>&#91;ATag&#93; </code>
+section of the make file.  Additionally, the section <code>&#91;ATag&#93;</code> in the make file
+may have additional tags like <code>&lt;!--#BTag#--&gt;</code> that are also processed in the
+during the parse.</p>
+
+<p>Now, tags can be formatted in three cases:</p>
+
+<p><code>&lt;!--#ATag#--&gt;</code> is a general format.  It causes the parser to check for the 
+section &#91;ATag&#93; in the make file first, then in the file the tag appear in, 
+then in the file noted as the default.  Default is used to cause the current
+make file to inherit some sections from the default.</p>
+
+<p><code>&lt;!--#filename:ATag#--&gt;</code> is a more specific format.  It causes the parser
+to look in the filename denoted before the colon.</p>
+
+<p><code>&lt;!--#this:ATag#--&gt;</code> tells the parser to only look in the file the tag appears 
+in for the section <code>&#91;ATag&#93;</code>.</p>
+
+<p>Build will process all make files to generate all HTML pages.  The power in
+the program is that shared information or HTML code can be placed in
+common files.  I also use it to format the same information in different 
+files (such as generating an XML RSS Feed from a list of HTML files by
+having a make file that generates the RSS Feed).  For instance, if the data
+needs to be reformatted and <code>&lt;!--#ATag#--&gt</code>; is used within the data, and
+the data is referred to by two different make files that define section 
+&#91;ATag&#93; differently, the correct section will replace ATag in the data.  It 
+doesn't sound that powerful, but my experience is it makes for some pretty
+cool possibilities.  I still use it for my website, <a href="http://jonw0224.tripod.com">http://jonw0224.tripod.com</a></p>
+</p>
+<table width=100%>
+<tr>
+<td width=75% align="left">
+<p id="button2" onclick="showHideComments('button2', 'content2', 2)">
+	<script type="text/javascript">document.write(countComments(2)); dispContents[2] = 0;</script>
+</p>
+</tr>
+</table>
+<br>
+<span id="content2">
+</span><br><br>
+<div align="right"><reg>
+<a href="blogpost1.html?c=1">Prev >></a></reg></div>
+<script src="showComments.js" language="JavaScript1.2"></script>
+			
+            </td><td width=10>&nbsp;</td>
+
+			<td width=150 valign="top" td bgcolor="#EFEFEF" style="BORDER-BOTTOM: #8f8f8f 1px solid; BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-LEFT: #8f8f8f 1px solid; padding:0px; margin:0px;"> 
+
+			<table border=0 cellpadding=5 cellspacing=0>
+<tr>
+<td><div class="h5"><a href="
+blogpost3.html?c=3"><font color=#101010>
+Program History</a></div></td>
+</tr><tr>
+<td><div class="h5"><a href="
+blogpost2.html?c=2"><font color=#101010>
+Description</a></div></td>
+</tr><tr>
+<td><div class="h5"><a href="
+blogpost1.html?c=1"><font color=#101010>
+Version History
+</a></div></td>
+</tr>
+</table>
+			
+			<br>
+			<br>
+			<br>
+
+			
+        </td>    
+		</tr>
+</table>
+</center>
+			<br>
+			<br>
+			<br>
+			<center>
+			<small>Copyright 2012 by Jonathan Weaver</small><br>
+			<small>jonw0224@aim.com</small>
+			<br>
+			<br>
+			<small>Last updated: 2012 Aug 29
+			</center>
+<BR><BR><BR>
+</BODY>
+</HTML>
