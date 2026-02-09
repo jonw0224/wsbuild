@@ -82,8 +82,9 @@
  *
  * -----------------------------------------------------------------------------
  *
- *  Copyright (C) 2026 Jonathan Weaver
+ * MIT License
  *
+ * Copyright (c) 2026 Jonathan Weaver, jonw0224@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy 
  * of this software and associated documentation files (the “Software”), to deal 
@@ -795,3 +796,4 @@ int main(int argc, char *argv[])
 
   return 0;
 }
+
