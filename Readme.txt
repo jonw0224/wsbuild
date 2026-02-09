@@ -15,6 +15,11 @@ Version History:
     2/8/2026 - Modified code to run on Linux instead of Windows. Tested and
         fixed bugs introduced.
 
+Compile:
+--------
+
+gcc -o wsbuild Source/main.C
+
 Program History:
 ----------------
 
