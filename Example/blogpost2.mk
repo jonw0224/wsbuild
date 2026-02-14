@@ -62,7 +62,7 @@ needs to be reformatted and #ATag# is used within the data, and
 the data is referred to by two different make files that define section 
 ATag differently, the correct section will replace ATag in the data.  It 
 doesn't sound that powerful, but my experience is it makes for some pretty
-cool possibilities.  I still use it for my website, http://jonathanweaver.net
+cool possibilities.
 
 [post]
 <p>A make file (*.mk) defines an HTML page to be generated.  It is a standard
@@ -104,7 +104,7 @@ needs to be reformatted and <code>&lt;!--#ATag#--&gt</code>; is used within the 
 the data is referred to by two different make files that define section 
 &#91;ATag&#93; differently, the correct section will replace ATag in the data.  It 
 doesn't sound that powerful, but my experience is it makes for some pretty
-cool possibilities.  I still use it for my website, <a href="http://jonw0224.tripod.com">http://jonw0224.tripod.com</a></p>
+cool possibilities.  </p>
 
 [Make]
 file=<!--#file#-->

@@ -23,7 +23,7 @@ Program History
 Mon, 20 Aug 2012 15:19:00 EST
 
 [descript]
-This program is called "build".  I use it to create static webpages using
+This program is called "wsbuild".  I use it to create static webpages using
 shared data referred to across several files.  The original program was
 developed in 2000 when I was in college and administered a couple of 
 websites.  The problem was my clients (family) requested changes that spanned 
@@ -38,7 +38,7 @@ limitations, input and output file size limitations removed, and the addition
 of a default value in the make file).
 
 [post]
-<p>This program is called "build".  I use it to create static webpages using
+<p>This program is called "wsbuild".  I use it to create static webpages using
 shared data referred to across several files.  The original program was
 developed in 2000 when I was in college and administered a couple of 
 websites.  The problem was my clients (family) requested changes that spanned 
